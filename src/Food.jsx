@@ -36,14 +36,15 @@ class Food extends Component{
 
         const myFood = this.state.favFood.map((food, i) => {
             return(
-                <div key={i}>
-                    <h1 className="">I like these foods:</h1>
-                    <h3>{food.name}</h3>
+                <div key={i} className='text-center'>
+                    <h1 className="text-xl font-bold">I like this food:</h1>
+                    <h3 className="text-lg">{food.name}</h3>
                 </div>
             )
         })
         return(
                 <>  
+                    <h1 className="text-center text-2xl font-bold">Choose Your Food</h1>
                     <div className="grid grid-cols-3">
                         {foodList}
                     </div>
